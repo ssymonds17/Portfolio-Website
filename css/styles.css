@@ -9,6 +9,7 @@
   --header-weight: 700;
 }
 
+
 * {
   box-sizing: border-box;
 }
@@ -57,12 +58,16 @@ a:active {
   color: var(--active-visited-color);
 }
 
-/* Top and Bottom borders go out test
+/* Top and Bottom borders go out */
+.navigation-list li {
+  position: relative;
+}
 
 .both-borders_out:before,
 .both-borders_out:after {
   position: absolute;
   width: 100%;
+  left: 0;
   height: 2px;
   background: #357b70;
   content: "";
@@ -80,11 +85,11 @@ a:active {
   transform: translateY(-10px);
 }
 
-.both-borders_out:before,
-.both-borders_out:after {
+.both-borders_out:hover:before,
+.both-borders_out:hover:after {
   opacity: 1;
   transform: translateY(0px);
-} */
+}
 
 .sub-btn {
   /* Overwrites browser defaults and resets the border */
@@ -319,8 +324,7 @@ button:focus,
   animation: 4s color-change infinite alternate linear;
 }
 
-/* Want to get the sunrays to spin around the sun on the inside */
-/* @keyframes sunray-rotate {
+@keyframes sunray-rotate {
   from {
     transform: rotate(0deg);
   }
@@ -330,12 +334,9 @@ button:focus,
 }
 
 .sun-rays {
-  transform-origin: center;
-}
-
-.sun-rays {
+  transform-origin: 403px 43.5px;
   animation: 5s sunray-rotate infinite alternate linear;
-} */
+}
 
 /* Sun sets but in front of other images,
 Colour change animation also stops */
