@@ -180,6 +180,11 @@ display: inline-block;
 width: 33%;
 }
 
+.example-image {
+  width: 1fr;
+  height: 100px;
+}
+
 /* Styling CSS grid */
 
 .grid {
