@@ -21,10 +21,12 @@ body {
   line-height: 1.6;
   /* Sets the line-height to 1.6 */
   background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 50px;
   font-weight: var(--header-weight);
 }
 
@@ -119,7 +121,7 @@ a:active {
 
 .profile {
   max-width: 700px;
-  display: flex;
+  flex: 1 0 auto;
   margin: 0 auto;
   align-items: center;
   padding-top: 20px;
@@ -139,6 +141,7 @@ to the base of the page directly */
   display: flex;
   text-align: center;
   flex-direction: column;
+  flex-shrink: 0;
 }
 
 .page-header {
@@ -180,8 +183,12 @@ width: 33%;
 }
 
 .example-image {
-  width: 1fr;
+  width: 400px;
   height: 100px;
+}
+
+.work-example-links {
+  list-style-type: none;
 }
 
 /* Styling CSS grid */
