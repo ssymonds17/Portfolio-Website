@@ -47,6 +47,15 @@ a:active {
   color: #004d4d;
 }
 
+label {
+  display: inline-block;
+  min-width: 75px;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8em;
+}
 /* Top and Bottom borders go out test
 
 .both-borders_out:before,
