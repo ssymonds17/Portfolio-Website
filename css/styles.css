@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #00cccc;
+  --primary-color: #004d4d;
   --active-visited-color: #004d4d;
   --background-color: #faf8f5;
   --button-color: #357b70;
@@ -8,7 +8,6 @@
   --work-hover: #fff;
   --header-weight: 700;
 }
-
 
 * {
   box-sizing: border-box;
@@ -178,11 +177,6 @@ to the base of the page directly */
 .grid-item {
 display: inline-block;
 width: 33%;
-}
-
-.example-image {
-  width: 1fr;
-  height: 100px;
 }
 
 /* Styling CSS grid */
